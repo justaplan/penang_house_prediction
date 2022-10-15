@@ -89,7 +89,7 @@ st.set_page_config(page_title="My App")
 
 
 ## Webapp Layout
-st.title("How much should i pay for property in Penang?")
+st.title("Location-Weighted Predictive Modelling of Penang Property Prices?")
 st.image(Image.open("./image/penang.jpg"), width=700)
 with st.expander("About this app"):
   st.write("This app is used to predict the Penang Housing Price.")
@@ -104,8 +104,8 @@ form = st.form("my_form")
 prefer_location = form.selectbox("1. What is your preferred location?",(subarea))
 prefer_type = form.selectbox("2. What is your preferred type of house?",(["Apartment / Condominium", "House"]))
 property_type = form.selectbox("3. What is your preferred property type?",(["Freehold", "Leasehold"]))
-size = form.slider("4. Total of house size (sqrt)?", 900, 3000, 2000)
-room_count = form.slider("5. Total of room count?", 3, 10, 7)
+size = form.slider("4. Total of house size (sqrt)?", 500, 3000, 2000)
+room_count = form.slider("5. Total of room count?", 2, 10, 7)
 house_price = 0
 district_penang = check_subarea_name(prefer_location)
 location_penang = check_island_mainland(district_penang)
