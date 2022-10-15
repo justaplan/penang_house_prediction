@@ -89,7 +89,7 @@ st.set_page_config(page_title="My App")
 
 
 ## Webapp Layout
-st.title("Location-Weighted Predictive Modelling of Penang Property Prices?")
+st.title("Location-Weighted Predictive Modelling of Penang Property Prices.")
 st.image(Image.open("./image/penang.jpg"), width=700)
 with st.expander("About this app"):
   st.write("This app is used to predict the Penang Housing Price.")
